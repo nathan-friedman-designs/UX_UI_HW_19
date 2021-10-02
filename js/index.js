@@ -1,5 +1,7 @@
+console.log("Your index.js file is loaded correctly!"); 
 //for Work section
 $(".tab").on("click",function() {
+    console.log("You clicked on .tab");
     if ($(this).hasClass("tab1")) {
         $(".tab1").addClass("selected");
         $(".tab2").removeClass("selected");
@@ -42,6 +44,7 @@ $(".tab").on("click",function() {
         $("#proj4").css("display","grid");
     }
 });
+
 //for Skills section
 $("#catGD").on("click", function(){
     $("#dropGD").slideToggle();
@@ -60,3 +63,9 @@ function fade() {
     $('.preloader').fadeOut("slow");
     }
     setTimeout(fade, 3500);
+//for backToTop UI Interaction
+//$(window).scroll(function() {
+    //if($(window).scrollTop() + $(window).height() == $(document).height()) {
+        
+    //}
+ //});
