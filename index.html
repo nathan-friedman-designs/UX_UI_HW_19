@@ -12,23 +12,29 @@
         <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
 
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<!-- for mobile view -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
-
-        <header class="navigation">
+        <header class="topBar">
+            <div class="hamburger">
+                <img src= "images/hamburgerMenu.png" width="25" height="25">
+             </div>
+            <div class="inline-block logo">
+                <img src= "images/logo.png" width="40" height="40">
+             </div>
+        </header>
+        <section class="navigation">
             <div id= "navContainer">
             <nav class= "inline-block">
                   <!--homework code: <div class="inline-block logo">
                     <img src= "/images/logo.png" width="40" height="40">
                 </div>-->
-                
-                <div class="inline-block logo">
-                   <img src= "images/logo.png" width="40" height="40">
-                </div>
-
                 <ul>
-
+                    <li class="inline-block">
+                        <img src= "images/home.png" width="25" height="25"> Home
+                </li>
                     <li class="inline-block">
                               <img src= "images/work.png" width="25" height="25"> Work
                     </li>
@@ -50,7 +56,7 @@
             </nav>
             </div>
 
-        </header>
+        </section>
 
             <section class="heroImg">
                 <div class="content">
@@ -62,7 +68,7 @@
                         NATHAN FRIEDMAN
                     </h1>
                     <p>
-                        Needs to contribute something good and significant to the world as a UX Designer, because inspiring the best out of others provides a sense of meaning. 
+                        Needs to contribute something as a UX Designer that's good and significant and moves people, because inspiring the best out of others provides a sense of meaning. 
                     </p>
                     <p>
                         For this goal, can leverage talents in onboarding, data synthesis, and user insight identification. Can also draw from experience gained through working in four design projects, once overseeing as project manager the user-centered build of a mobile app.
@@ -80,16 +86,24 @@
         <!--tabs-->
         <div class="tabGrid">
         <div class="tab tab1 selected">
-            <img src="images/plus.png" class="plus" width="25" height="25">
+            <h3>
+                #1
+            </h3>
         </div>
         <div class="tab tab2">
-          <img src="images/plus.png" class="plus" width="25" height="25">
+            <h3>
+                #2
+            </h3>
         </div>
         <div class="tab tab3">
-          <img src="images/plus.png" class="plus" width="25" height="25">
+            <h3>
+                #3
+            </h3>
         </div>
         <div class="tab tab4">
-          <img src="images/plus.png" class="plus" width="25" height="25">
+            <h3>
+                #4
+            </h3>
         </div>
       </div>
         <!--project information x4-->
@@ -232,6 +246,7 @@
     </div>
 </section>
 <!--  My UX Skills section coded using CSS flex -->
+<!--
             <section class="skills">
                 <h2>
                     SKILLS_
@@ -356,39 +371,139 @@
                     </div>
                     </div>
                 </div>
-            </section>
+            </section>-->
+<!-- skills section reiterated -->
+<section class="skills">
+    <h2>
+      SKILLS_
+    </h2>
+    <div class="flexContainer">
+      <div class="skillsBox">
+        <div class="category" id="catGD">
+        <img src="images/graphicDesign_icon.png" width=40 height=40>
+        <h3>
+          Graphic Design
+        </h3>
+        <img src="images/caret-down.png" width=25 height=25>
+        </div>
+        <div class="skillset">
+          <p id="dropGD">
+            Creativity, Layout Design
+          </p>
+        </div>
+      </div>
+      <div class="skillsBox">
+        <div class="category" id="catRes">
+        <img src="images/research_icon.png" width=40 height=40>
+        <h3>
+          Research
+        </h3>
+        <img src="images/caret-down.png" width=25 height=25>
+      </div>
+        <div class="skillset">
+          <p id="dropRes">
+            Affinity Diagrams, Data Synthesis & Analysis, Data Visualization, Persona Creation, User Insight Identification, User Interviews, User Interviews Planning, User Research, Usability Testing
+          </p>
+      </div>
+      </div>
+      <div class="skillsBox">
+        <div class="category" id="catUIDes">
+        <img src="images/uiDesign_icon.png" width=40 height=40>
+        <h3>
+          UI Design
+        </h3>
+        <img src="images/caret-down.png" width=25 height=25>
+      </div>
+        <div class="skillset">
+          <p id="dropUIDes">
+            Copy Writing, Information Architecture and Sitemapping, Onboarding, Prototyping, Sketching, Storyboarding, User-Centered Design, Wireframing
+          </p>
+      </div>
+    </div>
+      <div class="skillsBox">
+        <div class="category" id="catSoft">
+        <img src="images/software_icon.png" width=40 height=40>
+        <h3>
+          Software
+        </h3>
+        <img src="images/caret-down.png" width=25 height=25>
+        </div>
+        <div class="skillset">
+          <p id="dropSoft">
+            Figma, InVision, Miro
+          </p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="contact">
+        <ul class="contactIcons">
+            <li>
+                <img src="images/email.png" width=25 height=25>
+            </li>
+            <li>
+                <img src="images/phone.png" width=25 height=25>
+            </li>
+            <li>
+                <img src="images/linkedin.png" width=25 height=25>
+            </li>
+            <li>
+                <img src="images/medium.png" width=25 height=25>
+            </li>
+        </ul>
+        <ul class="contactText">
+            <li>
+                Copy Email
+            </li>
+            <li>
+                Copy Phone
+            </li>
+            <li>
+                Go to Profile
+            </li>
+            <li>
+                Go to Profile
+            </li>
+        </ul>
+    </div>
+    <!--<div class="legal">
+        <p>
+            Copyright 2021
+        </p>-->
+    </div>
+  </footer>
 <!--footer-->
-        <footer>
+        <!--<footer>
             <ul>
-                <li class="inline-block icon">
+                <li class="inline-block icon emailIcon">
                     <img src= "images/email.png" width="25" height="25">
                 </li>
-                <li class="inline-block text">
+                <li class="inline-block text emailText">
                     Copy Email
                 </li>
-                <li class="inline-block icon">
+                <li class="inline-block icon phoneIcon">
                     <img src= "images/phone.png" width="25" height="25">
                 </li>
-                 <li class="inline-block text">
+                 <li class="inline-block text phoneText">
                     Copy Phone
                 </li>
-                <li class="inline-block icon">
+                <li class="inline-block icon LInIcon">
                     <img src= "images/linkedin.png" width="25" height="25">
                 </li>
-                <li class="inline-block text">
+                <li class="inline-block text LInText">
                     Go to Profile
                 </li>
-                <li class="inline-block icon">
+                <li class="inline-block icon MdIcon">
                     <img src= "images/medium.png" width="25" height="25">
                 </li>
-                <li class="inline-block text">
+                <li class="inline-block text MdText">
                     Go to Profile
                 </li>
             </ul>
                 <p>
                     Copyright Nathan Friedman 2021
             </p>
-        </footer>
+        </footer>-->
 <!--loading screen!-->
 <div class="preloader">
     <img src="images/logo.png">
