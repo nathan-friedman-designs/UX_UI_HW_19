@@ -69,3 +69,5 @@ function fade() {
         
     //}
  //});
+ // in mobile view
+ 
