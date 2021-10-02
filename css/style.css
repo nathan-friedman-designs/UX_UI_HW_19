@@ -2,18 +2,25 @@
     display: inline-block;
     vertical-align: top;
 }*/
+.topBar {
+  position: relative;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+.hamburger {
+  display: none;
+}
+.logo {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 body {
     background-color: black;
 }
-
-.logo {
-    padding: 1%;
-    text-align: center;
-    margin-top: 10%;
-    margin-bottom: 40%;
-}
-
 #navContainer {
     display: inline-block;
     position: fixed;
@@ -34,15 +41,18 @@ nav {
     clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
 }
 
-/*nav > ul {
-    width: 50%;
-    margin-left: auto; 
-}*/
+.navigation ul {
+  margin-top: 100%;
+  list-style-type: none;
+  margin-top: 75px;
+  padding: 0;
+}
 
 .heroImg {
     height: auto;
     width: 100%;
     margin: 0 auto;
+    margin-top: -10%;
     margin-bottom: 10%;
     float: right;
     background-color: black;
@@ -75,27 +85,78 @@ h1 {
     width: 250px;
     margin-top: 5%;
 }
+/*.emailIcon {
+  grid-area: emailIcon;
+}
+.phoneIcon {
+  grid-area: phoneIcon;
+}
+.LInIcon {
+  grid-area: LInIcon;
+}
+.MdIcon {
+  grid-area: MdIcon;
+}
+.emailText {
+  grid-area: emailText;
+}
+.phoneText {
+  grid-area: phoneText;
+}
+.LInText {
+  grid-area: LInText;
+}
+.MdText {
+  grid-area: MdText;
+}*/
 
+.contactIcons {
+  grid-area: contI;
+  display: grid;
+  text-align: center;
+  list-style-type: none;
+  grid-template-rows: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.contactText {
+  grid-area: contT;
+  display: grid;
+  text-align: center;
+  list-style-type: none;
+  grid-template-rows: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.contact {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
 footer {
+  width: 100%;
+  height: 84px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "contI"
+    "contT";
+  outline: 3px solid #C9DAF8;
+}
+/*footer {
     background-color: black;
     width: 100%;
-    height: 84px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    height: 100px;
     outline: 3px solid #C9DAF8;
-    /*clip-path: polygon(64px 75%, 100% 75%, 100% 100%, 0% 100%);*/
-}
+    clip-path: polygon(64px 75%, 100% 75%, 100% 100%, 0% 100%);
+}*/
 
-footer ul {
-    /*homework code: vertical-align: top;*/
-    padding: 1%;
-    width: 50%;
-    height: 65px;
+/*footer ul {
+    homework code: vertical-align: top;
     margin-left: auto;
-    margin-right: 5%;
-    display: block;
-}
+    margin-right: auto;
+    display: inline-block;
+    list-style-type: none;
+}*/
 
 #portTagline {
     font-family: 'Orbitron';
@@ -130,33 +191,21 @@ nav ul li {
     padding: 1%;
 }
 
-footer ul li {
+/*footer ul li {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: baseline;
     margin-left: 1%;
     margin-right: 1%;
-}
+}*/
 
-footer p {
+/*footer p {
     float: right;
     font-family: 'Montserrat';
     font-size: 14px;
-    justify-content: flex-end;
     margin-right: 1%;
     color: #C9DAF8;
-}
+}*/
 
-header ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-footer ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
 
 .icon {
     margin-right:-1%;
@@ -192,7 +241,6 @@ section {
 .projInfoGrid {
     grid-area: projInfoGrid;
     display: grid;
-    height: 100%;
     grid-template-columns: 50% 50%;
     grid-template-areas:
       "projImg projInfo";
@@ -224,6 +272,10 @@ section {
     display: grid;
     justify-content: center;
     align-content: center;
+  }
+  .projInfoGrid img {
+    max-width: 100%;
+    height: auto;
   }
   .projTitle {
     grid-area: projTitle;
@@ -288,14 +340,61 @@ h3 {
     grid-template-areas:
       "projImg projInfo";
 }
-/*Skills Section*/
+
+/* skills section reiterated */
 .flexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+  }
+  .skills {
+    text-align: center;
+}
+.skills p {
+        font-family: 'Montserrat';
+        font-size: 14px;
+        color: #C9DAF8;
+}
+  .skillsBox {
+    height: 256px;
+    width: 256px;
+    outline: 3px solid #C9DAF8;
+  }
+  .category {
+    height: 150px;
+    outline: 3px solid #C9DAF8;
+  }
+  .category:hover {
+    cursor: pointer;
+  }
+  .skillset {
+    height: 106px;
+    overflow: auto;
+  }
+  #dropGD {
+    display: none;
+}
+#dropRes {
+    display: none;
+}
+#dropUIDes {
+    display: none;
+}
+#dropSoft {
+    display: none;
+}
+
+/*Skills Section*/
+/*.flexContainer {
     display: flex;
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
     width: 71.1%;
-    height: 512px;
+    height: 256px;
 }
 .column {
     width: 25%;
@@ -330,7 +429,7 @@ h3 {
     font-family: 'Montserrat';
     font-size: 14px;
     color: #C9DAF8;
-}
+}*/
 /*loading screen!*/
 .preloader {
     position: fixed;
@@ -368,6 +467,25 @@ h3 {
   }
 /*media query*/
 @media only screen and (max-width: 600px) {
+    .navigation {
+      display: none;
+    }  
+    .hamburger {
+      width: 64px;
+      display: inline-block;
+      position: fixed;
+      left: 0;
+    }
+  /*hero section*/
+    .heroImg {
+        width: 71.1%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: 15%;
+    }
+    .heroImg p {
+      width: 71.1%;
+    }
     /*work section*/
     .tab {
         text-align: center;
@@ -422,11 +540,11 @@ h3 {
       }
       .projImg {
         grid-area: projImg;
-        padding: 5%;
         display: grid;
-        align-content: start;
+        align-content: center;
         justify-content: center;
       }
+
       .projInfo {
         grid-area: projInfo;
         display: grid;
@@ -497,21 +615,21 @@ h3 {
         grid-area: goToProj;
         margin-left: auto;
         margin-right: auto;
-}
+    }
+    
 /*skills section*/
 .flexContainer {
     display: flex;
-    flex-direction: row;
-    margin-left: 70px;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 24%;
     margin-right: auto;
-    width: 71.1%;
-    height: 512px;
-}
-.category {
+  }
+/*.category {
     display: grid;
     grid-template-rows: 1fr 1fr 25px;
     grid-template-columns: 1fr;
-    height: 150px;
+    height: 64px;
 }
 .category p {
     font-size: 14px;
@@ -532,9 +650,12 @@ h3 {
     display: block;
     margin-left: auto;
     margin-right: auto; 
-}
+}*/
 /*footer section*/
-footer {
+.contactText {
+  display: none;
+}
+/*footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -550,5 +671,5 @@ footer ul {
 }
 .icon {
     align-items: baseline;
-}
+}*/
 }
