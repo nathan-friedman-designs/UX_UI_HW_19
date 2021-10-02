@@ -2,6 +2,7 @@
     display: inline-block;
     vertical-align: top;
 }*/
+/* mobile view */
 .topBar {
   position: relative;
   top: 0;
@@ -511,6 +512,11 @@ h3 {
     height: 106px;
     overflow: auto;
   }
+  .skillset li {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    width: 100%;
+}
   #dropGD {
     display: none;
 }
