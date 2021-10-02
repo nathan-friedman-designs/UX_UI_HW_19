@@ -43,16 +43,16 @@ $(".tab").on("click",function() {
     }
 });
 //for Skills section
-$(".graphDes").on("click", function(){
+$("#catGD").on("click", function(){
     $("#dropGD").slideToggle();
   });
-$(".res").on("click", function(){
+$("#catRes").on("click", function(){
     $("#dropRes").slideToggle();
 });
-$(".uiDes").on("click", function(){
+$("#catUIDes").on("click", function(){
     $("#dropUIDes").slideToggle();
 });
-$(".soft").on("click", function(){
+$("#catSoft").on("click", function(){
     $("#dropSoft").slideToggle();
 });
 //for Loading Screen
