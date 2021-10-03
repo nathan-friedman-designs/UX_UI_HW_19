@@ -2,16 +2,29 @@
     display: inline-block;
     vertical-align: top;
 }*/
+html {
+  scroll-behavior: smooth;
+}
 /* mobile view */
+a {
+  font-family: 'Orbitron';
+  font-size: 14px;
+  color: #C9DAF8;
+  text-decoration: none;
+}
+
 .topBar {
   position: relative;
-  top: 0;
-  height: 50px;
+  margin-top: 10px;
+  height: 120px;
   width: 100%;
   text-align: center;
   vertical-align: middle;
 }
 .hamburger {
+  display: none;
+}
+.mobNav {
   display: none;
 }
 .logo {
@@ -49,13 +62,14 @@ nav {
   margin-top: 160%;
   list-style-type: none;
   padding: 0;
+  height: 100%;
 }
 
 .heroImg {
     height: auto;
     width: 100%;
     margin: 0 auto;
-    margin-top: -10%;
+    margin-top: -12%;
     margin-bottom: 10%;
     float: right;
     background-color: black;
@@ -63,6 +77,7 @@ nav {
 
 .content {
     position: relative;
+    margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -76,7 +91,7 @@ h1 {
 
 .content p {
     font-family: 'Montserrat';
-    font-size: 14px;
+    font-size: 16px;
     color: #C9DAF8;
     width: 50%;
     margin-left: auto;
@@ -94,6 +109,20 @@ button {
   cursor: pointer;
   outline: 3px solid #C9DAF8;
 }
+button:hover {
+  overflow: visible;
+  color: #FCE5CD;
+  outline: 2px solid rgba(204, 222, 255, 0.6);
+  outline-offset: -2px;
+  background: #0059ff;
+  transition: 1.5s infinite;
+  transition-delay: 1.5s;
+  box-shadow: 0 0 10px #0059ff, 0 0 400px #0059ff, 0 0 80px #0059ff;
+  transition: 1s;
+  animation: pulse 2s infinite alternate;
+  animation-delay: 1s;
+  text-shadow: 0 0 50px #E69138;
+}
 /* button animation*/
 .container {
   position: absolute;
@@ -108,7 +137,7 @@ button {
   overflow: visible;
 }
 
-a {
+.container a {
   letter-spacing: .2rem;
   text-decoration: none;
   display: inline-block;
@@ -122,7 +151,7 @@ a {
   z-index: 2;
   overflow: hidden;
 }
-a:hover {
+.container a:hover {
   color: #FCE5CD;
   outline: 2px solid rgba(204, 222, 255, 0.6);
   outline-offset: -2px;
@@ -135,53 +164,53 @@ a:hover {
   animation-delay: 1s;
   text-shadow: 0 0 50px #E69138;
 }
-a span {
+.container a span {
   display: block;
   position: absolute;
 }
-a:hover span {
+.container a:hover span {
   transition: 1.7s;
   transition-delay: .2s;
 }
 
-a span:nth-child(1){
+.container a span:nth-child(1){
   top: 0;
   left: -100%;
   width: 100%;
   height: 2px;
   background: linear-gradient(90deg , transparent, #ccdeff);
 }
-a:hover span:nth-child(1){
+.container a:hover span:nth-child(1){
   left: 100%;
 }
-a span:nth-child(3){
+.container a span:nth-child(3){
   bottom: 0;
   right: -100%;
   width: 100%;
   height: 2px;
   background: linear-gradient(270deg , transparent, #ccdeff);
 }
-a:hover span:nth-child(3){
+.container a:hover span:nth-child(3){
   right: 100%;
 }
-a span:nth-child(2){
+.container a span:nth-child(2){
   top: -100%;
   right: 0;
   width: 2px;
   height: 100%;
   background: linear-gradient(180deg , transparent, #ccdeff);
 }
-a:hover span:nth-child(2){
+.container a:hover span:nth-child(2){
   top: 100%;
 }
-a span:nth-child(4){
+.container a span:nth-child(4){
   bottom: -100%;
   left: 0;
   width: 2px;
   height: 100%;
   background: linear-gradient(0deg , transparent, #ccdeff);
 }
-a:hover span:nth-child(4){
+.container a:hover span:nth-child(4){
   bottom: 100%;
 }
 
@@ -251,14 +280,14 @@ a:hover span:nth-child(4){
   grid-template-rows: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.contactText {
+/*.contactText {
   grid-area: contT;
   display: grid;
   text-align: center;
   list-style-type: none;
   grid-template-rows: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-}
+}*/
 .contact {
   width: 50%;
   margin-left: auto;
@@ -266,13 +295,12 @@ a:hover span:nth-child(4){
 }
 footer {
   width: 100%;
-  height: 84px;
+  height: 92px;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr;
   grid-template-columns: 1fr;
   grid-template-areas:
-    "contI"
-    "contT";
+    "contI";
   outline: 3px solid #C9DAF8;
 }
 /*footer {
@@ -318,10 +346,10 @@ li {
     color: #C9DAF8;
 }
 
-nav ul li {
+nav li {
     text-align: center;
-    margin-bottom: 20%;
-    padding: 1%;
+    margin-top: 40%;
+    margin-bottom: 40%;
 }
 
 /*footer ul li {
@@ -346,7 +374,6 @@ nav ul li {
 }
 /*HW 18*/
 section {
-    margin-bottom: 10%;
     width: 100%;
     float: right;
 }
@@ -442,7 +469,7 @@ h3 {
 }
 .workGrid p {
     font-family: 'Montserrat';
-    font-size: 14px;
+    font-size: 16px;
     color: #C9DAF8;
 }
 .selected {
@@ -489,10 +516,11 @@ h3 {
   }
   .skills {
     text-align: center;
+    margin-bottom: 10%;
 }
 .skills p {
         font-family: 'Montserrat';
-        font-size: 14px;
+        font-size: 16px;
         color: #C9DAF8;
 }
   .skillsBox {
@@ -513,6 +541,8 @@ h3 {
     overflow: auto;
   }
   .skillset li {
+    margin: 0 auto;
+    text-align: left;
     font-family: 'Montserrat';
     font-size: 14px;
     width: 100%;
@@ -648,6 +678,24 @@ h3 {
       position: fixed;
       top: 1%;
       left: 0;
+      z-index: 2;
+    }
+    .mobNav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background: black;
+      outline: 3px solid #C9DAF8;
+      z-index: 1;
+    }
+    .mobNav ul {
+      list-style-type: none;
+      margin-top: 20%;
+    }
+    .mobNav li {
+      margin-top: 10%;
+      margin-bottom: 10%;
     }
   /*hero section*/
     .heroImg {
@@ -660,7 +708,7 @@ h3 {
         height: auto;
     }
     .heroImg p {
-      width: 71.1%;
+      width: 100%;
     }
     /*work section*/
     .tab {
@@ -726,7 +774,7 @@ h3 {
         display: grid;
         height: 100%;
         justify-content: center;
-        align-content: space-around;
+        align-items: center;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-areas:
@@ -784,6 +832,7 @@ h3 {
       }
       .projSkills li {
         font-family: 'Montserrat';
+        text-align: left;
         font-size: 14px;
         color: #C9DAF8;
       }
