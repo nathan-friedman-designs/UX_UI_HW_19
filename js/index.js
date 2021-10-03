@@ -70,4 +70,9 @@ function fade() {
     //}
  //});
  // in mobile view
- 
+ $(".hamburger").on("click", function(){
+    $(".mobNav").slideToggle();
+});
+$(".mobA").on("click", function(){
+    $(".mobNav").slideToggle();
+});
