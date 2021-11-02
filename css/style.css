@@ -382,7 +382,7 @@ section {
     float: right;
 }
 .workGrid {
-    height: 512px;
+    height: 640px;
     width: 71.1%;
     display: grid;
     margin-left: auto;
@@ -728,6 +728,9 @@ h3 {
     .tab4 {
         grid-area: tab4;
     }
+    .tab5 {
+      grid-area: tab5;
+  }
     .selected {
         background-color: #C9DAF8;
         outline: 3px solid #C9DAF8;
@@ -735,10 +738,10 @@ h3 {
       .tabGrid {
         grid-area: tabGrid;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         grid-template-areas:
-            "tab1 tab2 tab3 tab4";
+            "tab1 tab2 tab3 tab4 tab5";
     }
       .workGrid {
         height: 100%;
