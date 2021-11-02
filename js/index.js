@@ -11,6 +11,7 @@ $(".tab").on("click",function() {
         $("#proj2").css("display","none");
         $("#proj3").css("display","none");
         $("#proj4").css("display","none");
+        $("#proj5").css("display","none");
 
     }
     else if ($(this).hasClass("tab2")) {
@@ -18,30 +19,48 @@ $(".tab").on("click",function() {
         $(".tab2").addClass("selected");
         $(".tab3").removeClass("selected");
         $(".tab4").removeClass("selected");
+        $(".tab5").removeClass("selected");
         $("#proj1").css("display","none");
         $("#proj2").css("display","grid");
         $("#proj3").css("display","none");
         $("#proj4").css("display","none");
+        $("#proj5").css("display","none");
     }
     else if ($(this).hasClass("tab3")) {
         $(".tab1").removeClass("selected");
         $(".tab2").removeClass("selected");
         $(".tab3").addClass("selected");
         $(".tab4").removeClass("selected");
+        $(".tab5").removeClass("selected");
         $("#proj1").css("display","none");
         $("#proj2").css("display","none");
         $("#proj3").css("display","grid");
         $("#proj4").css("display","none");
+        $("#proj5").css("display","none");
     }
     else if($(this).hasClass("tab4")) {
         $(".tab1").removeClass("selected");
         $(".tab2").removeClass("selected");
         $(".tab3").removeClass("selected");
         $(".tab4").addClass("selected");
+        $(".tab5").removeClass("selected");
         $("#proj1").css("display","none");
         $("#proj2").css("display","none");
         $("#proj3").css("display","none");
         $("#proj4").css("display","grid");
+        $("#proj5").css("display","none");
+    }
+    else if($(this).hasClass("tab5")) {
+        $(".tab1").removeClass("selected");
+        $(".tab2").removeClass("selected");
+        $(".tab3").removeClass("selected");
+        $(".tab4").removeClass("selected");
+        $(".tab5").addClass("selected");
+        $("#proj1").css("display","none");
+        $("#proj2").css("display","none");
+        $("#proj3").css("display","none");
+        $("#proj4").css("display","none");
+        $("#proj5").css("display","grid");
     }
 });
 
