@@ -504,6 +504,14 @@ h3 {
     grid-template-areas:
       "projImg projInfo";
 }
+#proj5 {
+  display: none;
+  grid-area: projInfoGrid;
+  height: 100%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    "projImg projInfo";
+}
 
 /* skills section reiterated */
 .flexContainer {
@@ -813,6 +821,15 @@ h3 {
           "projImg" 
           "projInfo";
     }
+    #proj5 {
+      display: none;
+      grid-area: projInfoGrid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 400px auto;
+      grid-template-areas:
+        "projImg" 
+        "projInfo";
+  }
     .projTitle {
         grid-area: projTitle;
         text-align: center;
