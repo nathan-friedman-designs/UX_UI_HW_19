@@ -7,6 +7,7 @@ $(".tab").on("click",function() {
         $(".tab2").removeClass("selected");
         $(".tab3").removeClass("selected");
         $(".tab4").removeClass("selected");
+        $(".tab5").removeClass("selected");
         $("#proj1").css("display","grid");
         $("#proj2").css("display","none");
         $("#proj3").css("display","none");
