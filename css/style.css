@@ -47,6 +47,7 @@ body {
     background: #C9DAF8;
     box-sizing: border-box;
     clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+    z-index: 1;
 }
 nav {
     /*homework code: width: 73%;*/
@@ -56,6 +57,7 @@ nav {
     background-color: black;
     position: fixed;
     clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+    z-index: 2;
 }
 
 .navigation ul {
@@ -289,7 +291,7 @@ button:hover {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }*/
 .contact {
-  width: 50%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
