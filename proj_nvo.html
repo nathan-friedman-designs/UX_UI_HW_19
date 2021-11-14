@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>
+        Redesign the National Veterans Outreach Website
+        </title>
+
+        <!-- Hotjar Tracking Code for https://nathan-friedman-designs.github.io/UX_UI_HW_19/ -->
+        <script>
+        (function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:2639095,hjsv:6};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+          })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>
+        
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="css/style_proj_nvo.css" type="text/css">
+
+        <!-- for mobile view -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- font -->
+        <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+    </head>
+    
+    <body>
+      
+      <section class="navigation">
+        <div id= "navContainer">
+        <nav class= "mainNav inline-block">
+            <ul>
+                <li class="inline-block">
+                    <a href="index.html" class="deskA"><img src= "images/home.png" width="25" height="25"> Home</a>
+                </li>
+                
+                <li class="inline-block">
+                    <a href="#work" class="deskA"><img src= "images/work.png" width="25" height="25"> Work</a>
+                </li>
+
+                <li class="inline-block">
+                    <a href="#skills" class="deskA"><img src= "images/skill.png" width="25" height="25"> Skills</a>
+                </li>
+
+                <li class="inline-block">
+                  <a href="#contact" class="deskA"><img src= "images/contact.png" width="25" height="25"> Contact</a>
+              </li>
+          </ul>
+        </nav>
+        </div>
+        </section>
+      <header class="topBar">
+        
+        <div class="hamburger">
+            
+          <img src= "images/hamburgerMenu.png" width="25" height="25">
+         </div>
+        
+         <div class="inline-block logoContainer">
+            
+          <img src= "images/logo.png" class="logo" width="80" height="80">
+         </div>
+      </header>
+
+      <section class="mobNav">
+        <div class="hamburger">
+            
+          <img src= "images/hamburgerMenu.png" width="25" height="25">
+         </div>
+        <ul>
+            <li class="inline-block">
+                <a href="index.html" class="mobA"><img src= "images/home.png" width="25" height="25"> Home</a>
+        </li>
+            <li class="inline-block">
+            <a href="#work" class="mobA"><img src= "images/work.png" width="25" height="25"> Work</a>
+            </li>
+
+            <li class="inline-block">
+                <a href="#skills" class="mobA"><img src= "images/skill.png" width="25" height="25"> Skills</a>
+            </li>
+            <li class="inline-block">
+              <a href="#contact" class="mobA"><img src= "images/contact.png" width="25" height="25"> Contact</a>
+          </li>
+      </ul>
+  </section>
+
+        <!-- case study navigation section using nav component from Bootstrap 4-->
+        
+        <ul class="nav nav-tabs">
+            
+            <li class="nav-item">
+              
+                <a class="nav-link" href="#">0. Introduction</a>
+            </li>
+            
+            <li class="nav-item">
+              
+                <a class="nav-link" href="#phase1">1. User Research</a>
+            </li>
+            
+            <li class="nav-item">
+              
+                <a class="nav-link" href="#phase2">2. Definition & I.A.</a>
+            </li>
+            
+            <li class="nav-item">
+                
+                <a class="nav-link" href="#phase3">3. Low-Fidelity Wireframing</a>
+              </li>
+              
+              <li class="nav-item">
+                
+                <a class="nav-link" href="#phase4">4. High-Fidelity Mockup</a>
+              </li>
+              
+              <li class="nav-item">
+                
+                <a class="nav-link" href="#phase5">5. Advanced IxD</a>
+              </li>
+          </ul>
+
+          <!-- case study introduction to the product using jumbotron component from Bootstrap 4-->
+          
+          <div class="jumbotron">
+            
+            <div class="textShadowBox">
+            </div>
+
+              <div class="centered">
+              
+              <h1 class="what-if">
+                
+                What if the transition to civilian life was made easier on veterans?
+              
+              </h1>
+              
+              </div>
+            
+
+            <img src="projImages_nvo/jumbotron_flag.png" class="flag" height=400>
+            
+          </div>
+
+          <div class="intro">
+
+            <p class="nonCardContent">
+                Some of our veterans struggle to get resources on finding new career paths, receiving housing assistance, and generally coexisting in civilian life. Non-profit organizations like the National Veterans Outreach were born to bridge this gap. 
+            </p>
+
+            <div class="container squareImgContainer">
+            
+              <div class="row">
+                
+                <div class="card introCard1 col-xs-12 col-xl-4 squareCard">
+                  
+                  <img src="projImages_nvo/nvoOriginalSite1.png" class="squareImg card-img-top" alt="...">
+                </div>
+                
+                <div class="card col-xs-12 col-xl-4 squareCard">
+                  
+                  <img src="projImages_nvo/nvoOriginalSite2.png" class="squareImg card-img-top" alt="...">
+                </div>
+                
+                <div class="card col-xs-12 col-xl-4 squareCard">
+                  
+                  <img src="projImages_nvo/nvoOriginalSite3.png" class="squareImg card-img-top" alt="...">
+                </div>
+              </div>
+            </div>
+
+            <p class="nonCardContent">
+                However, our team found that its outdated site model had a chance of frustrating veterans instead. We decided to plant our flag there, and rework the NVO’s content framework to create a website design that made veterans feel confident in finding the services that they needed. 
+            </p>
+          </div>
+
+          <!-- research section using col system and card components from Bootstrap 4-->
+
+          <h2 id="phase1">
+            PHASE 1: USER RESEARCH_
+          </h2>
+
+          <p class="nonCardContent">
+            We took a two-prong approach to gathering user information. We conducted interviews with people on the veteran experience, and we distributed an electronic survey form to the public.
+          </p>
+
+          <div class="container">
+            
+            <div class="row">
+              
+              <div class="card col-lg-4 squareImg interviewCard">
+                
+                <img src="projImages_nvo/avatar.png" class="avatarImg card-img-top" alt="...">
+              
+                <div class="card-body">
+                
+                  <p class="card-text">People say they love and respect me for my service to our country, but now that I’m disabled, why do I feel lost?
+                    - Angela, age 42
+                    </p>
+                </div>
+              </div>
+              
+              <div class="card col-lg-4 squareImg interviewCard">
+                
+                <img src="projImages_nvo/avatar.png" class="card-img-top" alt="...">
+              
+                <div class="card-body">
+                
+                  <p class="card-text">Civilians can’t understand my experiences, and 
+                    it’s keeping me from making connections 
+                    and getting work.
+                        - Robert, age 38
+                    </p>
+                </div>
+              </div>
+              
+              <div class="card col-lg-4 squareImg interviewCard">
+                
+                <img src="projImages_nvo/avatar.png" class="card-img-top" alt="...">
+              
+                <div class="card-body">
+                
+                  <p class="card-text">There should be more veterans working in civilian jobs. We bring to the table discipline and a strong work ethic.
+                    - Andrea, age 55
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+          <p>
+            The data we collected from the interviews suggested that veterans tended to rely on their friends and fellow veterans to connect them to resources, primarily to avoid the hassles and stigma that would face them if they went through other, traditional paths.
+          </p>
+
+          <p>
+            We also found that for returning veterans, underemployment was one of the toughest obstacles they faced. Veterans were often pushed toward working in low-skill jobs, even though their training gave them the foundations to handle better work. After all, skills learned in the military didn’t always transfer well to private-sector work. That being said, a majority of veterans transitioning to the civilian life wanted to do something different from their military roles. Without a clear path to follow, they found themselves hindered from developing their technical and essential skills.
+          </p>
+
+          <div class="card compAnalysis horizCard">
+
+              <img src="projImages_nvo/competitorAnalysisMatrix.png" class="horizImg">
+          </div>
+
+          <p>
+            To assist in rounding out our research, we reviewed some of the organizations competing with the National Veterans Outreach. A few of the non-profits we observed were the Soldiers’ Angels, Hope for the Warriors, and The American Legion. For the most part, these groups covered essential points in helping veterans, including discussing employment, housing assistance, and health care. However, we found an opportunity to make the NVO stand out by turning its website into one more desirable and easy to use than the others.
+          </p>
+
+          <div class="card userPersona horizCard">
+
+            <img src="projImages_nvo/userPersona.png" class="horizImg">
+          </div>
+
+        <p>
+            Altogether, our research assisted us in realizing that disabled veterans needed an easier way to access their benefits because they didn’t want to overburden their friends and families in their transition to civilian life. We believed that, by modernizing the National Veterans Outreach's website design, disabled veterans would be able to access their benefits more easily, allowing the site to be a more effective resource for disabled veterans. These conclusions served to form the backbone of our user insight statement.
+        </p>
+      </div>
+
+        <!-- problem statement section using the jumbotron component from Bootstrap 4 -->
+
+        <h2 id="phase2">
+          PHASE 2: DEFINITION & I.A._
+        </h2>
+
+        <div class="container">
+        <p>
+          Building upon our research and user insight statement, we identified our problem statement:
+        </p>
+
+        <div class="jumbotron jumbotron-fluid">
+          <div class="PSContainer">
+            <h1 class="problemStatement">
+              Disabled veterans are struggling to obtain resources on finding a new career path, receiving housing assistance, and coexisting in civilian life. We have observed that these users are not discovering services through the National Veterans Outreach website, leaving them to face a tedious process through government channels.
+              How might we make veterans feel confident in finding the services they need?</h1>
+          </div>
+        </div>
+
+        <div class="card userFlowDiagram horizCard">
+
+          <img src="projImages_nvo/userFlowDiagram.png" class="horizImg">
+        </div>
+
+      <p>
+        To assist us in our design, we generated a user flow diagram to visualize the optimal user experience. In this scenario, the user would follow a simple path to employment information,along the way encountering a site feature that matched their skills to career opportunities.
+      </p>
+    </div>
+
+      <!-- iteration section made using card components from Bootstrap 4 -->
+      
+      <h2 id="phase3">
+        PHASE 3: LOW-FIDELITY WIREFRAMING_
+      </h2>
+
+<!-- QUARANTINED UNTIL I FIGURE OUT WHY MY ACCORDION DOES NOT FUNCTION
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Iteration: Sketch Prototype
+              </button>
+            </h2>
+          </div>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              <div class="card sketchPrototype horizCard">
+                <img src="images/sketchPrototype.png" class="horizImg">
+              </div>
+            <p>
+              From here, we sketched a prototype and garnered feedback. 
+            </p>
+            </div>
+          </div>
+        </div>       
+        <div class="card">   
+          <div class="card-header" id="headingTwo">     
+            <h2 class="mb-0">         
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Iteration: Low-Fidelity Prototype
+              </button>
+            </h2>
+          </div>     
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">  
+            <div class="card-body">        
+              <div class="card loFiPrototype horizCard">
+                <img src="images/lo-fiPrototype.png" class="horizImg">
+              </div>   
+            <p>
+              We took the observations and kept them in consideration during the creation of our low-fidelity prototype, which we offered for user testing. 
+            </p>
+            </div>
+          </div>
+        </div>     
+        <div class="card">      
+          <div class="card-header" id="headingThree">        
+            <h2 class="mb-0">             
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Iteration: Mid-Fidelity Prototype
+              </button>
+            </h2>
+          </div>        
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">          
+            <div class="card-body">           
+              <div class="card midFiPrototype horizCard">
+                <img src="images/mid-fiPrototype.png" class="horizImg">
+              </div>
+            <p>
+              User testing provided us additional feedback to aid our next round of iteration, resulting in our mid-fidelity prototype, which was adjusted to cater to the priorities of our users.
+            </p>
+            </div>
+          </div>
+        </div>
+      </div> 
+END QUARANTINE -->
+
+<div class="container">
+<div class="card">
+  <div class="card-header">
+    Iteration: Sketch Prototype
+  </div>
+  <div class="card vertiCard">
+  <img src="projImages_nvo/sketchPrototype.png" class="card-img-top vertiImg" alt="...">
+</div>
+  <div class="card-body">
+    <p class="card-text">From here, we sketched a prototype and garnered feedback.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    Iteration: Low-Fidelity Prototype
+  </div>
+  <div class="card horizCard">
+  <img src="projImages_nvo/lo-fiPrototype.png" class="card-img-top horizImg" alt="...">
+</div>
+  <div class="card-body">
+    <p class="card-text">We took the observations and kept them in consideration during the creation of our low-fidelity prototype, which we offered for user testing.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    Iteration: Mid-Fidelity Prototype
+  </div>
+  <div class="card horizCard">
+  <img src="projImages_nvo/mid-fiPrototype.png" class="card-img-top horizImg" alt="...">
+</div>
+  <div class="card-body">
+    <p class="card-text">User testing provided us additional feedback to aid our next round of iteration, resulting in our mid-fidelity prototype, which was adjusted to cater to the priorities of our users.</p>
+  </div>
+</div>
+
+</div>
+      <!-- hi-fi prototype section made using col system from Bootstrap 4 -->
+
+      <h2 id="phase4">
+        PHASE 4: HIGH-FIDELITY MOCKUP_
+      </h2>
+      
+      <div class="container">
+      <div class="card uiStyleGuide horizCard">
+
+        <img src="projImages_nvo/UIStyleGuide.png" class="horizImg">
+      </div>
+
+    <p>
+      Another tool we used to aid us in our design was the UI style guide. We kept in mind the results of our competitor analysis, while focusing our UI elements on keeping the UX design efficient, and promoting the organization’s values through the site’s aesthetics. To assist the users along their path, we chose images that would reflect the services the site provided, and a typography that made it simple for the user to understand the content.
+    </p>
+  </div>
+
+    <div class="container">
+            
+      <div class="row">
+        
+        <div class="card col-xs-12 col-xl-3">
+          
+          <img src="projImages_nvo/hi-fiPrototype_mobile.png" id="mobImg" class="card-img-top" alt="...">
+        </div>
+        
+        <div class="card col-xs-12 col-xl-9 horizCard">
+          
+          <img src="projImages_nvo/hi-fiPrototype_desktop.png" class="horizImg card-img-top" alt="...">
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+    <p>
+      From our mid-fidelity to high-fidelity prototypes, we engaged in user testing with 10 different users. The feedback we received was analyzed through a user priority matrix, which we applied to our responsive high-fidelity prototypes. As part of our user-centered design approach, it was critical to our team that the users enjoyed a seamless experience switching between mobile view and desktop view.
+    </p>
+
+    <p>
+      Among the data we gathered, we discovered that 80% of our users preferred using mobile devices for day-to-day reading and browsing. This helped us in deciding to implement a mobile-first approach to our final design. The design itself went through four iterations, adjusting based on feedback from users. Among the elements incorporated into the final prototype were a responsive layout between mobile and desktop views (to avoid user confusion between view-switching), and simplistic elements for content clarity. 
+    </p>
+
+    <div class="card questionnaire horizCard">
+
+      <img src="projImages_nvo/questionnaire.png" class="horizImg">
+    </div>
+
+    <p>
+      A center feature of our design was a module for skill matching to assist veterans in transferring military skills to civilian work and therefore helping ease their transition into civilian life. This module included a questionnaire users would fill out regarding their experience in different fields of knowledge, which would provide the data to match jobs to the strongest skills. To further support this transition effort, we also included listings with pre-filtered jobs and apprenticeship programs, as well as resume assistance.
+    </p>
+   </div>
+
+      <h2 id="phase5">
+        PHASE 5: ADVANCED IxD_
+      </h2>
+
+      <div class="container">
+      <div class="card heroImg horizCard">
+
+        <img src="projImages_nvo/heroImg.png" class="horizImg">
+      </div>
+  
+      <p>
+        We also included a hero section with attractive images of inviting scenes, to promote the mission of the National Veterans Outreach.
+      </p>
+
+      <div class="card footer horizCard">
+
+        <img src="projImages_nvo/footer.png" class="horizImg">
+      </div>
+  
+      <p>
+        In the footer, the link to the Veterans Crisis Line was displayed prominently alongside other important links, as well as a chart demonstrating the organization’s allocation of assets to encourage user trust and subsequent donations.
+      </p>
+
+      </div>
+
+      <div class="container">
+            
+        <div class="row">
+          
+          <div class="card col-xs-12 col-xl-4 squareCard">
+            
+            <img src="projImages_nvo/nvoOriginalSite0.png" class="squareImg card-img-top" alt="...">
+          </div>
+          
+          <div class="card col-xs-12 col-xl-4 squareCard">
+            
+            <img src="projImages_nvo/userPersonaImg.png" class="squareImg card-img-top" alt="...">
+          </div>
+          
+          <div class="card col-xs-12 col-xl-4 squareCard">
+            
+            <img src="projImages_nvo/finalDesign0.png" class="squareImg card-img-top" alt="...">
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+      <p>
+        In the end, a last round of testing demonstrated that users enjoyed the experience of the redesigned website. Not only did this validate our efforts, but, most importantly, it meant that we had a stronger alternative to the current site design, one that could offer better assistance in easing the transition to civilian life for returning veterans: our users.
+      </p>
+      </div>
+
+      <footer id="contact">
+        <div class="contact">
+            <ul class="contactIcons">
+                <li>
+                    <a href="mailto:nathan.friedman.designs@gmail.com"><img src="images/email.png" width=25 height=25><p>nathan.friedman.designs@gmail.com</p></a>
+                </li>
+                <li>
+                    <a href="tel:+2103508884"><img src="images/phone.png" width=25 height=25></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/nathanfriedmandesigns/"><img src="images/linkedin.png" width=25 height=25></a>
+                </li>
+                <li>
+                    <a href="https://friespace.medium.com/"><img src="images/medium.png" width=25 height=25></a>
+                </li>
+            </ul>
+        </div>
+      </footer>
+
+      <div class="preloader">
+        <img src="images/logo.png">
+    </div>
+
+      <!-- <script src=“https://code.jquery.com/jquery-3.3.1.slim.min.js”
+      integrity=“sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo”
+      crossorigin=“anonymous”></script>
+    <script src=“https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js”
+      integrity=“sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1”
+      crossorigin=“anonymous”></script>
+      <script src=“https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js”
+    integrity=“sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM”
+    crossorigin=“anonymous”></script>
+      <script src=“https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js” integrity=“sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p” crossorigin=“anonymous”></script>
+  <script src=“https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js”
+    integrity=“sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM”
+    crossorigin=“anonymous”></script> -->
+
+    <script src="https://kit.fontawesome.com/71c0fac313.js" crossorigin="anonymous"></script>
+<script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+<script src="js/index.js"></script>
+
+    </body>
+
+    
+</html>
