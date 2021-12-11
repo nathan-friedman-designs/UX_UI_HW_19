@@ -855,12 +855,15 @@ h3 {
       }
       .projSkills li {
         font-family: 'Montserrat';
-        text-align: left;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
         font-size: 14px;
         color: #C9DAF8;
       }
       .goToProj {
         grid-area: goToProj;
+        text-align: center;
         margin-left: auto;
         margin-right: auto;
     }
@@ -869,6 +872,7 @@ h3 {
 .flexContainer {
     display: flex;
     flex-direction: column;
+    width: 100%;
     justify-content: center;
     margin-left: 24%;
     margin-right: auto;
@@ -920,4 +924,37 @@ footer ul {
 .icon {
     align-items: baseline;
 }*/
+}
+@media only screen and (max-width: 740px) {
+  .container {
+    position: absolute;
+    bottom: -30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    display: flex;
+    transition: 1s;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .container {
+    position: absolute;
+    bottom: -25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    display: flex;
+    transition: 1s;
+  }
+}
+@media only screen and (max-width: 372px) {
+  .container {
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    display: flex;
+    transition: 1s;
+  }
 }
