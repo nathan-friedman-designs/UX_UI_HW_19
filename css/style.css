@@ -939,7 +939,6 @@ footer ul {
 @media only screen and (max-width: 425px) {
   .container {
     position: absolute;
-    bottom: -25%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
@@ -950,7 +949,7 @@ footer ul {
 @media only screen and (max-width: 372px) {
   .container {
     position: absolute;
-    bottom: -20%;
+    bottom: -15%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
